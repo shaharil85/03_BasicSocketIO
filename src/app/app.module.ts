@@ -8,9 +8,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
-//const config: SocketIoConfig = { url: 'localhost:3000', options: {} };
-//const config: SocketIoConfig = { url: 'http://*:3000/', options: {} };
-const config: SocketIoConfig = { url: 'http://60.49.131.103:3000', options: {} };
+//const config: SocketIoConfig = { url: 'https://expressqaisara.herokuapp.com/', options: {} };
+const config: SocketIoConfig = { url: 'https://nodejs-heroku-qaisara.herokuapp.com/', options: {} };
+//const config: SocketIoConfig = { url: 'http://localhost/', options: {} };
+
+//const config: SocketIoConfig = { url: 'http://192.168.1.10/', options: {} };
+//const config: SocketIoConfig = {url:'wss://60.49.131.103', options: {} };
+//const config: SocketIoConfig = {url:'ws://192.168.1.10', options: {} };
 
 @NgModule({
   declarations: [AppComponent],

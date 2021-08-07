@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
     let name = `user-${new Date().getTime()}`;
     this.currentUser = name;
     //this.currentUser = 'shaharil';
-    this.socket.emit('set-name', name);
+    this.socket.emit('set-name', this.currentUser);
     this.socket.fromEvent('users-changed').subscribe(data => {
       let user = data['user'];
       if (data['event'] === 'left') {
